@@ -1,0 +1,20 @@
+{
+  "name": "raider_io_bot",
+  "version": "1.0.0",
+  "description": "NodeJS raiderIO discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaulinN/RaiderIO_bot.git"
+  },
+  "keywords": [],
+  "author": "Nicolas Raulin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaulinN/RaiderIO_bot/issues"
+  },
+  "homepage": "https://github.com/RaulinN/RaiderIO_bot#readme"
+}
