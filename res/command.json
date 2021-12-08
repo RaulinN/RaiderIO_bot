@@ -1,0 +1,7 @@
+{
+  "__SEP__": "!",
+  "PING": "table ping",
+  "INFO": "table info",
+  "TABLE_EXEC": "table exec",
+  "TABLE_BEST": "table best"
+}
