@@ -4,9 +4,10 @@
   "description": "NodeJS raiderIO discord bot",
   "main": "src/main/js/ch/epfl/riomain.ts",
   "scripts": {
-    "build": "rm -rf build && npx tsc && cp -r src/main/res build/main/",
-    "start": "npm run build && node build/main/js/ch/epfl/rio/main.js",
-    "test": "npm run build && mocha build/test/**/*.test.js"
+    "clean": "rm -rf dist",
+    "build": "npm run clean && npx tsc",
+    "start": "npm run build && node dist/main/js/ch/epfl/rio/main.js",
+    "test": "npm run build && mocha dist/test/**/*.test.js"
   },
   "repository": {
     "type": "git",
