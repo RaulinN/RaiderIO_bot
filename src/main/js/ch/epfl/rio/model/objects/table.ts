@@ -1,5 +1,5 @@
-const aff = require('../../../res/affix.json');
-const dun = require('../../../res/dungeon.json');
+const aff = require('../../../../../../res/affix.json');
+const dun = require('../../../../../../res/dungeon.json');
 
 const padMiddle = (str: string, max: number): string => {
     return str

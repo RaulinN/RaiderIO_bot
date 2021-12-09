@@ -1,4 +1,4 @@
-const dun = require('../../../res/dungeon.json');
+const dun = require('../../../../../../res/dungeon.json');
 
 export default class MythicKey {
     private readonly dungeon: string;

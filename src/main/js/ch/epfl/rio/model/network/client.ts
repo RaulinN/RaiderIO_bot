@@ -1,11 +1,11 @@
-import Table from '../../model/objects/table';
-import QueryManager from '../../model/network/manager';
-import MythicKey from '../../model/objects/key';
+import Table from '../objects/table';
+import QueryManager from '../network/manager';
+import MythicKey from '../objects/key';
 import ModularTable from '../objects/modularTable';
 
-const com = require('../../../res/command.json');
-const aff = require('../../../res/affix.json');
-const par = require('../../../res/parameter.json');
+const com = require('../../../../../../res/command.json');
+const aff = require('../../../../../../res/affix.json');
+const par = require('../../../../../../res/parameter.json');
 
 const MAX_UPGRADE_LEVEL: number = 3;
 
@@ -14,7 +14,7 @@ export function handleCommPing(): Promise<string> {
 }
 
 export function handleCommInfo(): Promise<string> {
-    let info = require('../../../package.json');
+    let info = require('../../../../../../../../package.json');
 
     return Promise.resolve(JSON.stringify({
         'name': info.name,

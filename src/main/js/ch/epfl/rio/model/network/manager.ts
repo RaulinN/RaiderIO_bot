@@ -2,7 +2,7 @@ import { IncomingMessage } from "http";
 
 const https = require('https');
 
-const aff = require('../../../res/affix.json');
+const aff = require('../../../../../../res/affix.json');
 
 class Cache {
     private els: Map<string, any>;
