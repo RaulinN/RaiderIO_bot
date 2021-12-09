@@ -5,7 +5,7 @@ require('dotenv').config();
 const { Intents } = require('discord.js');
 
 import QueryManager from './model/network/manager';
-import { handleCommBest, handleCommExec, handleCommInfo, handleCommPing } from './model/network/client';
+import { handleCommBest, handleCommExec, handleCommInfo, handleCommNeed, handleCommPing } from './model/network/client';
 
 const com = require('../res/command.json');
 
@@ -43,6 +43,8 @@ export default class Bot {
         handleCommExec(content.split(' '), this.queryManager).then((s: string) => msg.reply(s));
       } else if (content.startsWith(`${com.__SEP__}${com.TABLE_BEST}`)) {
         handleCommBest(content.split(' '), this.queryManager).then((s: string) => msg.reply(s));
+      } else if (content.startsWith(`${com.__SEP__}${com.TABLE_NEED}`)) {
+        handleCommNeed(content.split(' '), this.queryManager).then((s: string) => msg.reply(s));
       }
     });
   }

@@ -29,7 +29,7 @@ export default class QueryManager {
 
         return new Promise((resolve, reject) => {
             let request = https.request(options, (result: IncomingMessage) => {
-                console.log(`INF – received a GET answer with status code '${result.statusCode}' for '${player}-${realm}(${region})' on '${field}${modifier}'`);
+                console.log(`DBG – received a GET answer with status code '${result.statusCode}' for '${player}-${realm}(${region})' on '${field}${modifier}'`);
 
                 let chunks = '';
                 result.on('data', (chunk: string) => chunks += chunk);
