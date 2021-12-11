@@ -1,7 +1,7 @@
-import Table from '../objects/table';
-import QueryManager from '../network/manager';
-import MythicKey from '../objects/key';
-import ModularTable from '../objects/modularTable';
+import QueryManager from './manager';
+import Table from '../objects/Table';
+import MythicKey from '../objects/MythicKey';
+import ModularTable from '../objects/ModularTable';
 
 const com = require('../../../../../../res/command.json');
 const aff = require('../../../../../../res/affix.json');

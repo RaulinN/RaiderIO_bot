@@ -1,4 +1,4 @@
-import Bot from './bot';
+import Bot from './model/objects/Bot';
 
 new Bot();
 

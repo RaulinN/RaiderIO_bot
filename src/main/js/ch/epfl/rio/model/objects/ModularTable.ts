@@ -1,18 +1,18 @@
-const padLeftTruncate = (str: string, max: number): string => {
+function padLeftTruncate(str: string, max: number): string {
     str = str.padEnd(max);
     if (str.length > max) {
         str = str.substring(0, max - 1) + '.';
     }
     return str;
-};
+}
 
-const padMiddleTruncate = (str: string, max: number): string => {
+function padMiddleTruncate(str: string, max: number): string {
     str = str.padStart(str.length + Math.floor((max - str.length) / 2)).padEnd(max);
     if (str.length > max) {
         str = str.substring(0, max - 1) + '.';
     }
     return str;
-};
+}
 
 export default class ModularTable {
     private table: string[] = [];

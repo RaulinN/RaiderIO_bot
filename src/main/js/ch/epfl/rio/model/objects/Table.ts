@@ -1,11 +1,11 @@
 const aff = require('../../../../../../res/affix.json');
 const dun = require('../../../../../../res/dungeon.json');
 
-const padMiddle = (str: string, max: number): string => {
+function padMiddle(str: string, max: number): string {
     return str
         .padStart(str.length + Math.floor((max - str.length) / 2))
         .padEnd(max)
-};
+}
 
 export default class Table {
     private readonly results: object;

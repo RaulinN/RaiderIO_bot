@@ -4,10 +4,10 @@ require('dotenv').config();
 
 const { Intents } = require('discord.js');
 
-import QueryManager from './model/network/manager';
-import { handleCommBest, handleCommExec, handleCommInfo, handleCommNeed, handleCommPing } from './model/network/client';
+import QueryManager from '../network/manager';
+import { handleCommBest, handleCommExec, handleCommInfo, handleCommNeed, handleCommPing } from '../network/client';
 
-const com = require('../../../../res/command.json');
+const com = require('../../../../../../res/command.json');
 
 
 export default class Bot {
